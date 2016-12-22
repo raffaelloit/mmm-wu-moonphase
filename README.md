@@ -20,7 +20,7 @@ Now add the module to the modules array in the `config/config.js` file:
 ````javascript
 modules: [
         {
-                module: 'mmm-wu-moon-phases',
+                module: 'mmm-wu-moonphase',
                 header: 'Current Moon Phase',   // optionally you can add a header to this block
                 position: 'top_right',  // this can be any of the regions.   
 		              config: {
