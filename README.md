@@ -72,6 +72,27 @@ The following properties can be configured:
 			</td>
 		</tr>
 		<tr>
+			<td><code>moonSize</code></td>
+			<td>Set your desierd size of the moon picture. (Obs: The original picture size from WU is 48*48px) <b>This will override the default value <code>70</code>.<br>
+				<br><b>Example:</b> <code>50</code>
+				<br><b>Default value:</b> <code>70</code><br>
+			</td>
+		</tr>
+		<tr>
+			<td><code>showPhaseText</code></td>
+			<td>Set to true/false to show/hide the text moon phase text above the moon picture. <b>This will override the default value <code>true</code>.<br>
+				<br><b>Example:</b> <code>false</code>
+				<br><b>Default value:</b> <code>true</code><br>
+			</td>
+		</tr>
+		<tr>
+			<td><code>showPercentText</code></td>
+			<td>Set to true/false to show/hide the text percent illuminated text under the moon picture. <b>This will override the default value <code>true</code>.<br>
+				<br><b>Example:</b> <code>false</code>
+				<br><b>Default value:</b> <code>true</code><br>
+			</td>
+		</tr>
+		<tr>
 			<td><code>apiLang</code></td>
 			<td>The apiLang define the language of the json query. See <a href="https://www.wunderground.com/weather/api/d/docs?d=language-support">Weather Underground language support</a><br>
 				<br><b>Possible values:</b> <code>DL</code>
