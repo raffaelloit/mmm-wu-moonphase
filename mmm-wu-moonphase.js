@@ -47,7 +47,8 @@ Module.register("mmm-wu-moonphase",{
             en: "translations/en.json",
             de: "translations/de.json",
             dl: "translations/de.json",
-            it: "translations/it.json"            
+            it: "translations/it.json",
+            sv: "translations/sv.json"
         };
     },
     
