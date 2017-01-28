@@ -20,7 +20,10 @@ Module.register("mmm-wu-moonphase",{
 				updateInterval: 10800 * 1000, // every 3 houres
 				animationSpeed: 1000,				
 				initialLoadDelay: 0, // 0 seconds delay
-				retryDelay: 2500,				                
+				retryDelay: 2500,
+				moonSize: 70, // Size of the moon picture OBS: original picture is 48x48px.
+				showPhaseText: true,
+				showPercentText: true,
 				apiBase: "http://api.wunderground.com/api", // URL string for json query
 				moonEndpoint: ".json", // URL Endpoint for json query
 		},
@@ -84,21 +87,25 @@ Module.register("mmm-wu-moonphase",{
 		small.className = "light small";
 
 		var phaseofMoon = document.createElement("div");
-		phaseofMoon.innerHTML = " " + this.phaseofMoon;
-		small.appendChild(phaseofMoon);
+		if (this.config.showPhaseText) {
+			phaseofMoon.innerHTML = " " + this.phaseofMoon;
+			small.appendChild(phaseofMoon);
+		}
 
 		var src = "https://www.wunderground.com/graphics/moonpictsnew/moon" + this.ageOfMoon + ".gif";
         var style = "align='center';";
-        var img = "<img height='70' width='70' src='" + src + "' style='" + style + "'>";
+        var img = "<img height='" + this.config.moonSize + "' width='" + this.config.moonSize + "' src='" + src + "' style='" + style + "'>";
 
         var moonIcon = document.createElement("div");
         moonIcon.innerHTML = img;
         small.appendChild(moonIcon);
 
-        var percentIlluminated = document.createElement("div");
-		percentIlluminated.innerHTML = this.percentIlluminated + " % "+ this.translate("ILLUM");
-		small.appendChild(percentIlluminated);
-
+		var percentIlluminated = document.createElement("div");
+		if (this.config.showPercentText) {
+			percentIlluminated.innerHTML = this.percentIlluminated + " % "+ this.translate("ILLUM");
+			small.appendChild(percentIlluminated);
+		}
+		
 		wrapper.appendChild(small);
 		return wrapper;
 	},
