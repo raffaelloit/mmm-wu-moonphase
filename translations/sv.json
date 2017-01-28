@@ -1,0 +1,7 @@
+{
+	"APIKEY":	"Vänligen skriv in din korrekta weatherunderground API-nyckel i konfigurationsdelen för modulen: ",
+	"APICTRY":	"Vänligen skriv in ditt weatherunderground-land i konfigurationsdelen för modulen: ",
+	"APICITY":	"Vänligen skriv in din weatherunderground-stad i konfigurationsdelen för modulen: ",
+	"LOAD":		"Laddar måncykel ...",
+	"ILLUM":	"upplyst"
+}
