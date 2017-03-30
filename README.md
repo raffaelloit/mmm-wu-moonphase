@@ -2,17 +2,24 @@
 The `mmm-wu-moonphase` module is a modules of the MagicMirror. This module displays the current moon phase, including a picture of the current moon and the percentage illumination.
 
 
-## Installation
+### Installation
 
 In your terminal, go to your MagicMirror's Module folder:
-````
+
+```
 cd ~/MagicMirror/modules
-git clone https://github.com/raffaelloit/mmm-wu-moonphase.git
-````
+```
 
-Configure the module in your `config.js` file.
+Clone this repository:
 
-## Using the module
+```
+git clone https://github.com/Snille/mmm-wu-moonphase.git
+```
+
+
+Add some [config entries](#configuration) to your config.js file. After that the content will be added to your mirror.
+
+### Using the module
 
 Get und set your API from wunderground.com and set your location and preferred language.
 
@@ -35,7 +42,7 @@ modules: [
 ]
 ````
 
-## Configuration options
+### Configuration
 
 The following properties can be configured:
 
@@ -69,6 +76,27 @@ The following properties can be configured:
 				<br><b>Example:</b> <code>London</code>
 				<br><b>Default value:</b> <code>Bern</code><br>
 				<br> This value is <b>REQUIRED</b>
+			</td>
+		</tr>
+		<tr>
+			<td><code>moonSize</code></td>
+			<td>Set your desierd size of the moon picture. (Obs: The original picture size from WU is 48*48px) <b>This will override the default value <code>70</code>.<br>
+				<br><b>Example:</b> <code>50</code>
+				<br><b>Default value:</b> <code>70</code><br>
+			</td>
+		</tr>
+		<tr>
+			<td><code>showPhaseText</code></td>
+			<td>Set to true/false to show/hide the moon phase text above the moon picture. <b>This will override the default value <code>true</code>.<br>
+				<br><b>Example:</b> <code>false</code>
+				<br><b>Default value:</b> <code>true</code><br>
+			</td>
+		</tr>
+		<tr>
+			<td><code>showPercentText</code></td>
+			<td>Set to true/false to show/hide the percent illuminated text under the moon picture. <b>This will override the default value <code>true</code>.<br>
+				<br><b>Example:</b> <code>false</code>
+				<br><b>Default value:</b> <code>true</code><br>
 			</td>
 		</tr>
 		<tr>
