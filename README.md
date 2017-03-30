@@ -13,7 +13,7 @@ cd ~/MagicMirror/modules
 Clone this repository:
 
 ```
-git clone https://github.com/Snille/mmm-wu-moonphase.git
+git clone https://github.com/raffaelloit/mmm-wu-moonphase.git
 ```
 
 
